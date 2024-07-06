@@ -9,6 +9,15 @@ body {
 	margin: 0 10px;
 }
 
+select {
+	display: block;
+	padding: 5px 8px;
+	border-radius: 4px;
+	min-width: 200px;
+	margin: 35px 0;
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+}
+
 label {
 	display: block;
 	margin: 10px 0;
@@ -20,7 +29,7 @@ option {
 	display: block;
 	margin: 10px 0;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 35px;
 	font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
 

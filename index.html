@@ -14,23 +14,50 @@
     />
   <body>
     <!-- Single Select Element -->
-    <select name="" id="">
+    <!--<select name="" id="">
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
       <option value="3">Option 3</option>
       <option value="4">Option 4</option>
       <option value="5">Option 5</option>
-    </select>
+    </select> --
 	<br/>
 	<br/>
+
 	<!-- Multiple Select Element -->
     <label for="countries">Which country would you like to visit?</label>
 	<select name="countries" id="countries">
+	  <option value="none">Select a country</option>
 	  <option value="usa">USA</option>
 	  <option value="canada">Canada</option>
 	  <option value="mexico">Mexico</option>
 	  <option value="uk">UK</option>
 	  <option value="france">France</option>
 	</select>
+
+	<label for="countries2">Please select which country you would like to visit.</label>
+	<select name="countries2" id="countries2">
+		<option value="none">Please select a country</option>
+		<option value="Iceland">Iceland</option>
+		<option value="Spain">Spain</option>
+		<option value="Sweden">Swedan</option>
+		<option value="France">France</option>
+		<option value="Italy">Italy</option>
+
+	</select>
+	
+	<script>
+
+		function displayCountry(event)	{
+		if (event.target.value.length > 0)	{
+			//alert(`You selected ${event.target.value}`);
+			alert(event.target.value);
+		}
+	}
+		let countriesSelect = document.querySelector("#countries");
+		countriesSelect.addEventListener("change", displayCountry);
+
+		
+	</script>
   </body>
 </html>

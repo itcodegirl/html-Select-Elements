@@ -44,16 +44,31 @@
 		<option value="France">France</option>
 		<option value="Italy">Italy</option>
 		<option value="Japan">Japan</option>
+		<option value="Norway">Norway</option>
 
 	</select>
 	<!--Sometimes they will run a form around the select. <form action=""></form>
 	The action will come from the backend /submit,/join,/login,/enter, etc.  -->
 	<script>
 
+		function displayCountry2(event)
+	
+		{
+			if (event.target.value.length > 0)	{
+				alert(event.target.value);
+			}
+		}
+		{
+		}
+	
+		let countriesSelect2 = document.querySelector("#countries2");
+		countriesSelect2.addEventListener("change", displayCountry2);
+
+		
 		function displayCountry(event)	{
 		if (event.target.value.length > 0)	{
-			//alert(`You selected ${event.target.value}`);
-			alert(event.target.value);
+			alert(`You selected ${event.target.value}`);
+			//alert(event.target.value);
 		}
 	}
 		let countriesSelect = document.querySelector("#countries");

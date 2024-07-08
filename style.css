@@ -16,28 +16,32 @@ select {
 	min-width: 200px;
 	margin: 35px 0;
 	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	color: blue;
+
 }
 
 label {
 	display: block;
+	padding: 10px;
 	margin: 10px 0;
 	font-family: "Sofia Sans Semi Condensed", sans-serif;
 	font-size: 35px;
+	color: aquamarine;
 }
 
 option {
 	display: block;
 	margin: 10px 0;
 	padding: 10px;
-	font-size: 35px;
+	font-size: 25px;
 	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	color: blueviolet;
 }
 
-#countries {
+/*#countries {
 	width: 300px;
 	/* Adjust the width as needed */
-	height: 40px;
+/* height: 40px;
 	/* Adjust the height as needed */
-	font-size: 16px;
-	/* Adjust the font size for better readability */
-}
+/*font-size: 16px;
+	/* Adjust the font size for better readability } */
